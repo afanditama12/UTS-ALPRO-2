@@ -17,7 +17,7 @@ public class No2BagianA {
 
         System.out.print("banyaknya data rekursif = ");
         int inputDataRekursif = scanner.nextInt();
-
+        
         int hasil = rekursif(inputDataRekursif);
         System.out.println("\n" + "total operasi data rekursif = " + hasil);
     }
@@ -26,14 +26,16 @@ public class No2BagianA {
         int S, x;
 
         x = (3 * value) - 1;
-
+        // jika nilai value sudah mencapai satu maka operasi yang akan dilakukan = operasi var x
         if (value == 1) {
             S = x;
         } else {
+            // perulangan akan terus di lakukan sampai nilai value mencapai 1
             S = x + (rekursif(value - 1));
 
         }
         System.out.print(x + " ");
+        // variabel S
         return (S);
     }
 }

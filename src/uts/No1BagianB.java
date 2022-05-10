@@ -20,7 +20,7 @@ public class No1BagianB {
         testTampilanProgram();
 
     }
-
+    // fungsi untuk kode pelanggan
     public static void kodePelanggan(String kode) {
         if (kode.equals("R")) {
             System.out.println("Kode pelanggan anda adalah Reguler");
@@ -30,11 +30,11 @@ public class No1BagianB {
             System.out.println("Kode pelanggan anda adalah VIP");
         }
     }
-
+    // fungsi test kode pelanggan / opsional (boleh dipakai / tidak)
     public static void testKodePelanggan() {
         kodePelanggan("V");
     }
-
+    // fungsi pemakaian data 
     public static void pemakaianData(int kuota, String kode) {
         if (kuota <= 50) {
             if (kode.equals("R")) {
@@ -77,11 +77,11 @@ public class No1BagianB {
             }
         } 
     }
-    
+    // fungsi test pemakaiaan data / opsional (boleh dipakai / tidak)
     public static void testPemakaianData() {
         pemakaianData(51, "V");
     }
-    
+    // fungsi tampilan program
     public static void tampilanProgram() {
         Scanner scanner = new Scanner(System.in);
         
@@ -96,6 +96,7 @@ public class No1BagianB {
             kodePelanggan("V");
         } else {
             System.out.println("Maaf kode pelanggan yang anda masukan salah");
+            // program akan keluar jika kode pelanggan yang dimasukan salah
             System.exit(0);
         }
         
@@ -110,7 +111,7 @@ public class No1BagianB {
             pemakaianData(inputPemakaianData, inputKodePelanggan);
         }
     }
-    
+    // fungsi test tampilan program (boleh dipakai / tidak)
     public static void testTampilanProgram() {
         tampilanProgram();
     }
