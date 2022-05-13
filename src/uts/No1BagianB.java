@@ -17,7 +17,7 @@ public class No1BagianB {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        testTampilanProgram();
+        tampilanProgram();
 
     }
     // fungsi untuk kode pelanggan
